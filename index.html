@@ -8,29 +8,33 @@
    </head>
    <body>
       <!--This is the head-->
-      <div class="container my-5">
+      <div class="container my-3">
          <h1>Shaolong Li</h1>
          <p class="lead">
             short introduction about myself 
          </p>
       </div>
+
       <!--This is the navigation bar-->
       <div class="container mb-4">
-         <nav>
-            <ul class="nav nav-pills">
+         <nav class="navbar navbar-dark bg-dark">
+            <ul class="nav">
                <li class="nav-item">
-                  <a href="#" class="nav-link active">Home</a>
+                  <a href="#" class="nav-link active" style="color:white">Home</a>
                </li>
                <li class="nav-item">
-                  <a href="/about.html" class="nav-link">About me</a>
+                  <a href="/about.html" class="nav-link" style="color:white">About me</a>
                </li>
+               
                <li class="nav-item">
-                  <a href="#" class="nav-link">Portfolio</a>
-               </li>
-               <li class="nav-item">
-                  <a href="#" class="nav-link">Contact</a>
+                  <a href="#" class="nav-link" style="color:white">Contact</a>
                </li>
             </ul>
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit" 
+              style="margin-right:10px;border-color:aliceblue;color:aliceblue">Search</button>
+            </form>
          </nav>
       </div>
       
@@ -38,22 +42,14 @@
       <div class="row">
          <!--First column statr here-->
          <div class="col">
+            
+            <!--person img goes here-->
+          
+            <img src="/images/avatar.jpg" class="avatar mb-3" alt="Avatar" 
+              style="height:300px;width:300px;border-radius:50%;margin-left:100px;" >  
+         
+
             <h3 class="mb-3">Experience</h3>
-            <!--First card statr here-->
-            <div class="card mb-3">
-               <div class="card-body">
-                  <div class="mx-2">
-                     <h4>frist expeience goes here</h4>
-                     <div><strong>Time goes here</strong></div>
-                     Describe my expeience
-                  </div>
-                  <ul class="list-group list-group-flush mt-2">
-                     <li class="list-group-item">detailed experiecen</li>
-                     <li class="list-group-item">detailed experiecen</li>
-                     <li class="list-group-item">detailed experiecen</li>
-                  </ul>
-               </div>
-            </div>
             <!--Second card statr here-->
             <div class="card mb-3">
               <div class="card-body">
@@ -73,19 +69,24 @@
 
          <!--Second column-->
          <div class="col mb-3">
-          <!--This is the Skill section-->
+            <!--This is the Skill section-->
+            <h3 class="mb-3">Resume</h3>
+               <body>
+                  <object src="/resume/resumeCV.pdf" width="200" height="300"></object>
+               </body>
             <h3 class="mb-3">Skills</h3>
-            
+         
          </div>
+
 
       </div>
      </div>
 
      <div class="container">
-      <div class="h3">Previous Project</div>
+      <div class="h3">Portfolio</div>
       <div class="row">
           <!--project 1-->
-          <div class="col-lg-3">
+          <div class="col-lg-3 mb-3">
             <div class="card">
               <img src="..." class="card-img-top" alt="...">
               <div class="card-body">
@@ -96,7 +97,7 @@
             </div> 
           </div>
           <!--project 2-->
-          <div class="col-lg-3">
+          <div class="col-lg-3 mb-3">
             <div class="card">
               <img src="..." class="card-img-top" alt="...">
               <div class="card-body">
@@ -107,7 +108,7 @@
             </div> 
           </div>
           <!--project 3-->
-          <div class="col-lg-3">
+          <div class="col-lg-3 mb-3">
             <div class="card">
               <img src="..." class="card-img-top" alt="...">
               <div class="card-body">
@@ -118,7 +119,7 @@
             </div> 
           </div>
           <!--project 4-->
-          <div class="col-lg-3">
+          <div class="col-lg-3 mb-3">
             <div class="card">
               <img src="..." class="card-img-top" alt="...">
               <div class="card-body">
