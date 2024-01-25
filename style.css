@@ -1,0 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+nav {
+   background-color: white;
+   padding: 5px 38px;
+}
+nav a {
+   font-size: 1.5em;
+   /* color: #f5568696; */
+   color:rgba(27, 30, 30, 0.452);
+   text-decoration: none;
+   padding: 6px 20px;
+   transition: .5s
+}
+nav a:hover {
+   color: #f5568677
+}
