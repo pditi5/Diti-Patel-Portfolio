@@ -1,4 +1,4 @@
-# Zikang Chen's Personal Website
+# Xingyin's Personal Website
 
 This is my personal website.
 
