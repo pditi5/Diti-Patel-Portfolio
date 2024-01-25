@@ -22,3 +22,19 @@ nav a:hover {
 .main {
    margin-top: 100px;
 }
+
+.card-link {
+   text-decoration: none;
+   color: inherit; /* Optionally, set the color to inherit the parent color */
+}
+
+.card-link:hover {
+   color:#f5568677;
+   text-decoration: none; /* Remove underline on hover */
+}
+
+.btn-outline-primary:hover {
+   background-color: #f5568677; /* Change this color to your desired hover color */
+   color: #fff; /* Change this color to the desired text color on hover */
+   border-color: #f5568677; /* Change this color to the desired border color on hover */
+}
