@@ -3,13 +3,20 @@
    <head>
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width, initial-scale=1">
-      <title>Zikang Chen</title>
+      <style>
+    
+        .btn-outline-primary {
+            color: #F55687 !important;
+            border-color: #F55687!important;
+        }
+    </style>
+      <title>Xingyin(Rosy) Xu</title>
       <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
    </head>
    <body>
       <!--This is the head-->
       <div class="container my-3">
-         <h1>Zikang Chen</h1>
+         <h1 class="mb-3" style="font-family:'Georgia'"><strong>Xingyin(Rosy) Xu</strong></h1>
          <p class="lead" style="font-family:'Courier New', Courier, monospace;font-style: italic;font-weight:bold;font-size:medium;">
          </p>
          <p class="lead" style="font-family:'Courier New', Courier, monospace;font-style: italic;font-weight:bold;font-size:medium;">
@@ -27,7 +34,7 @@
                   <a href="./about.html" class="nav-link" style="color:white">About</a>
                </li>
                <li class="nav-item">
-                  <a href="resume\Resume - Zikang Chen.pdf" class="nav-link" style="color:white">Resume</a>
+                  <a href="resume\Resume_Xingyin_Xu.pdf" class="nav-link" style="color:white">Resume</a>
                </li>
                <li class="nav-item">
                   <a href="./contact.html" class="nav-link" style="color:white">Contact</a>
@@ -41,28 +48,29 @@
 
       <div class="container">
 
+
          <!--row one-->
          <div class="row">
             <!--row one first column-->
             <div class="col mb-3">
                <!--person img goes here-->
-               <img src="images/profile.jpg" class="avatar mb-3" alt="my pic" 
-               style="height:300px;width:300px;border-radius:50%;margin-left:100px;" >
+               <img src="images/homepage.jpg" class="avatar mb-3" alt="my pic" 
+               style="height:auto;width:400px;margin-left:100px;" >
             </div>
 
             <!--row one second column-->
-            <div class="col mb-3">
-               <!--This is the resume section-->
-               <h2 class="mb-3" style="font-family:'Georgia'"><strong>Hi there!</strong></h2>
-                  <p style="font-size:larger;">
-                    I am a Master's student in 
-                    <a href="https://viterbigradadmission.usc.edu/programs/masters/msprograms/industrial-systems-engineering/ms-analytics/">Analytics</a>
-                    at the <a href="https://usc.edu/">University of Southern California</a>, and I anticipate to graduate in May 2025.
-                    I received my Bachelor's degree at the <a href="https://ucsd.edu">University of California, San Diego</a>
-                    with a major in <a href="https://cogsci.ucsd.edu">Cognitive Science</a> with specialization in <a href="https://cogsci.ucsd.edu/undergraduates/major/machine-learning.html">Machine Learning and Neural Computation</a> and a minor in <a href="https://cse.ucsd.edu/">Computer Science</a>.
-                 </p>
-
-            </div>
+            <div class="col mb-3" >
+              <!--This is the resume section-->
+              <h2 class="mb-3" style="font-family:'Georgia'"><strong>Hi there!</strong></h2>
+              <p style="font-size: larger;">
+                  I am a Master's student in 
+                  <a href="https://cds.nyu.edu/" style="color: #F55687 !important;">Data Science</a> at New York University.
+                  I received my Bachelor's degree at University of California, San Diego
+                  with a major in <a href="https://math.ucsd.edu" style="color: #F55687 !important;">Probability and Statistics</a> 
+                  and minors in <a href="https://datascience.ucsd.edu/" style="color: #F55687 !important;">Data Science</a> 
+                  and <a href="https://economics.ucsd.edu/" style="color: #F55687 !important;">Economics</a>.
+              </p>
+          </div>
          </div><br>
 
          <hr>
@@ -72,17 +80,57 @@
             <div class="row">
       
                 <!--project-->
-                <div class="col-lg-3 mb-3">
+                <!-- <div class="col-lg-3 mb-3">
                   <div class="card">
-                    <img src="images/datamart.png" class="card-img-top" alt="Sales Data Warehouse">
+                    <img src="" class="card-img-top" alt="heart disease">
                     <div class="card-body">
-                      <h5 class="card-title">Sales Data Warehouse and Data Mart Implementation</h5>
-                      <p class="card-text">Snowflake database based on Northwinds database using SQL</p>
-                      <a href="https://github.com/zic017/Northwinds-Sales-Data-Warehouse/tree/main" class="btn btn-primary">GitHub Repo</a>
+                      <h5 class="card-title">Spotify Popularity Analysis</h5>
+                      <p class="card-text">Explored relationship between song features and song popularity in Spotify using machine learning and deep learning</p>
+                      <a href="https://github.com/yinyin0916/Spotify_Popularity_Analysis" class="btn btn-outline-primary btn-sm" style="font-size: 12px; padding: 0.2rem 0.5rem;">Report</a>
+                      <a href="https://github.com/yinyin0916/Spotify_Popularity_Analysis/blob/main/Spotify_Popularity_Analysis_Report.pdf" class="btn btn-outline-primary btn-sm" style="font-size: 12px; padding: 0.2rem 0.5rem;">Github Repo</a>
                     </div>
                   </div> 
-                </div>
-      
+                </div> -->
+                
+                <!--project-->
+                <div class="col-lg-3 mb-3">
+                  <div class="card">
+                    <img src="images/LLM_kt.png" class="card-img-top" alt="heart disease">
+                    <div class="card-body">
+                      <h5 class="card-title">Mitigating Overconfidence Bias in Large Language Models (LLM) through Knowledge Transfer</h5>
+                      <p class="card-text"> Utilized Chaint of Thought (CoT) from Gpt and transfer knowledge to smaller LLMs</p>
+                      <a href="https://github.com/yinyin0916/NLP2023Fall" class="btn btn-outline-primary btn-sm" style="font-size: 12px; padding: 0.2rem 0.5rem;">Github Repo</a>
+                    </div>
+                  </div> 
+                </div> 
+
+                <!--project-->
+                <div class="col-lg-3 mb-3">
+                  <div class="card">
+                    <img src="images/salary.png" class="card-img-top" alt="heart disease">
+                    <div class="card-body">
+                      <h5 class="card-title">Data Related Job Salary Analysis</h5>
+                      <p class="card-text"> Data Visualization on Relationship between Data Related Job Salary and Employee's Personal Information</p>
+                      <a href="https://github.com/yinyin0916/Data_Related_Job_Salary_Analysis/blob/main/Data-related%20Job%20Salary%20Analysis.pdf" class="btn btn-outline-primary btn-sm" style="font-size: 12px; padding: 0.2rem 0.5rem;">Report</a>
+                      <a href="https://github.com/yinyin0916/Data_Related_Job_Salary_Analysis" class="btn btn-outline-primary btn-sm" style="font-size: 12px; padding: 0.2rem 0.5rem;">Github Repo</a>
+                    </div>
+                  </div> 
+                </div> 
+
+                <!--project-->
+                <div class="col-lg-3 mb-3">
+                  <div class="card">
+                    <img src="images/movie.png" class="card-img-top" alt="heart disease">
+                    <div class="card-body">
+                      <h5 class="card-title">Movie Ratings Analysis</h5>
+                      <p class="card-text"> Investigated the movie ratings with statistical testings and machine learning models using Python</p>
+                      <a href="https://github.com/yinyin0916/Movie_Rating_Analysis/blob/main/Statistical_Tests_Analysis.pdf" class="btn btn-outline-primary btn-sm" style="font-size: 12px; padding: 0.2rem 0.5rem;">Report (Statistical Tests)</a></br>
+                      <a href="https://github.com/yinyin0916/Movie_Rating_Analysis/blob/main/ML_Analysis.pdf" class="btn btn-outline-primary btn-sm" style="font-size: 12px; padding: 0.2rem 0.5rem;">Report (ML)</a></br>
+                      <a href="https://github.com/yinyin0916/Movie_Rating_Analysis" class="btn btn-outline-primary btn-sm" style="font-size: 12px; padding: 0.2rem 0.5rem;">Github Repo</a>
+                    </div>
+                  </div> 
+                </div>                
+                
                 <!--project-->
                 <div class="col-lg-3 mb-3">
                   <div class="card">
@@ -90,62 +138,12 @@
                     <div class="card-body">
                       <h5 class="card-title">Rating Prediction with Collaborative Filtering</h5>
                       <p class="card-text">Clothes rating prediction using Jaccard similarity in Python</p>
-                      <a href="https://github.com/zic017/Clothes-Rating-Prediction/blob/main/Rating%20Prediction%20Report.pdf" class="btn btn-primary">Report</a>
-                      <a href="https://github.com/zic017/Clothes-Rating-Prediction/tree/main" class="btn btn-primary">GitHub Repo</a>
+                      <a href="https://github.com/yinyin0916/Rating_Prediction/blob/main/Assignment2_report.pdf" class="btn btn-outline-primary btn-sm" style="font-size: 12px; padding: 0.2rem 0.5rem;">Report</a>
+                      <a href="https://github.com/yinyin0916/Rating_Prediction" class="btn btn-outline-primary btn-sm" style="font-size: 12px; padding: 0.2rem 0.5rem;">GitHub Repo</a>
                     </div>
                   </div> 
                 </div>
-                
-                <!--project-->
-                <div class="col-lg-3 mb-3">
-                  <div class="card">
-                    <img src="images/disaster.png" class="card-img-top" alt="disaster">
-                    <div class="card-body">
-                      <h5 class="card-title">Disaster Tweets Classification for Resource Allocation</h5>
-                      <p class="card-text">Disaster-related Tweets classifier and Tableau risk management dashboard</p>
-                      <a href="https://github.com/zic017/Disaster-Tweet-Classifier-and-Information-Extraction" class="btn btn-primary">GitHub Repo</a>
-                    </div>
-                  </div> 
-                </div>
-      
-                <!--project-->
-                <div class="col-lg-3 mb-3">
-                  <div class="card">
-                    <img src="images/CNN.png" class="card-img-top" alt="CNN">
-                    <div class="card-body">
-                      <h5 class="card-title">Image Classification with Optimized CNN</h5>
-                      <p class="card-text">Optimized convolutional neural network in PyTorch</p>
-                      <a href="https://github.com/zic017/CNN-Image-Classification/blob/main/COGS 181 Final Report.pdf" class="btn btn-primary">Report</a>
-                      <a href="https://github.com/zic017/CNN-Image-Classification/tree/main" class="btn btn-primary">GitHub Repo</a>
-                    </div>
-                  </div> 
-                </div>
-      
-                <!--project-->
-                <div class="col-lg-3 mb-3">
-                  <div class="card">
-                    <img src="images/vaping.png" class="card-img-top" alt="vaping">
-                    <div class="card-body">
-                      <h5 class="card-title">Vaping Behavior in American Youth </h5>
-                      <p class="card-text">Analysis and visualization of survey data on vaping behavior in R</p>
-                      <a href="https://github.com/zic017/Vaping-Behaviors-in-American-Youth/blob/main/CS02%20-%20Vaping%20Behaviors%20in%20American%20Youth.pdf" class="btn btn-primary">Report</a>
-                      <a href="https://github.com/zic017/Vaping-Behaviors-in-American-Youth/tree/main" class="btn btn-primary">GitHub Repo</a>
-                    </div>
-                  </div> 
-                </div>
-      
-                <!--project-->
-                <div class="col-lg-3 mb-3">
-                  <div class="card">
-                    <img src="images/movies.png" class="card-img-top" alt="movies">
-                    <div class="card-body">
-                      <h5 class="card-title">Statistical Analysis of IMDb Movie Ratings</h5>
-                      <p class="card-text">Analysis of factors that influence movie ratings in R</p>
-                      <a href="https://github.com/zic017/Analysis-of-Movie-Ratings/blob/main/Analysis-of-Movie-Ratings.pdf" class="btn btn-primary">Report</a>
-                      <a href="https://github.com/zic017/Analysis-of-Movie-Ratings/tree/main" class="btn btn-primary">Github Repo</a>
-                    </div>
-                  </div> 
-                </div>
+
       
                 <!--project-->
                 <div class="col-lg-3 mb-3">
@@ -154,8 +152,8 @@
                     <div class="card-body">
                       <h5 class="card-title">Heart Disease Prediction from Health Indicators</h5>
                       <p class="card-text">Heart disease prediction using supervised machine learning models</p>
-                      <a href="https://github.com/zic017/Predicting-Heart-Disease-from-Health-Information-COGS-118A/blob/main/FinalProject_group011.ipynb" class="btn btn-primary">Report</a>
-                      <a href="https://github.com/zic017/Predicting-Heart-Disease-from-Health-Information-COGS-118A/tree/main" class="btn btn-primary">Github Repo</a>
+                      <a href="https://github.com/yinyin0916/Heart_Attack_Prediction/blob/main/FinalProject_group011.ipynb" class="btn btn-outline-primary btn-sm" style="font-size: 12px; padding: 0.2rem 0.5rem;">Report</a>
+                      <a href="https://github.com/yinyin0916/Heart_Attack_Prediction" class="btn btn-outline-primary btn-sm" style="font-size: 12px; padding: 0.2rem 0.5rem;">Github Repo</a>
                     </div>
                   </div> 
                 </div>
@@ -163,40 +161,16 @@
                 <!--project-->
                 <div class="col-lg-3 mb-3">
                   <div class="card">
-                    <img src="images/PCA.png" class="card-img-top" alt="PCA">
+                    <img src="images/sale_simulation.png" class="card-img-top" alt="Rating Prediction">
                     <div class="card-body">
-                      <h5 class="card-title">Facial Age Recognition</h5>
-                      <p class="card-text">Image clustering using unsupervised machine learning methods</p>
-                      <a href="https://github.com/zic017/Facial-Age-Recognition-COGS-118B-Final-Project/blob/main/COGS%20118B%20Final%20Project%20Paper%20Group%209.pdf" class="btn btn-primary">Report</a>
-                      <a href="https://github.com/zic017/Facial-Age-Recognition-COGS-118B-Final-Project/tree/main" class="btn btn-primary">Github Repo</a>
+                      <h5 class="card-title">Social Media Influencers' Advertisement in Social Networks and Effect on B2C store in China</h5>
+                      <p class="card-text">Applied SIS model in epidemiology to simulate the cloth sales under the effect of social media influencers' advertisement</p>
+                      <a href="https://github.com/yinyin0916/SIRModel_in_Cloth_Shop/blob/main/Presentation.pdf" class="btn btn-outline-primary btn-sm" style="font-size: 12px; padding: 0.2rem 0.5rem;">Report</a>
+                      <a href="https://github.com/yinyin0916/SIRModel_in_Cloth_Shop" class="btn btn-outline-primary btn-sm" style="font-size: 12px; padding: 0.2rem 0.5rem;">GitHub Repo</a>
                     </div>
                   </div> 
                 </div>
-      
-                <!--project-->
-                <div class="col-lg-3 mb-3">
-                  <div class="card">
-                    <img src="images/dino.png" class="card-img-top" alt="dino jump">
-                    <div class="card-body">
-                      <h5 class="card-title">Playing Dinosaur Game with Eye Blinks</h5>
-                      <p class="card-text">Eye-blink as control using EEG data from an OpenBCI Cyton</p>
-                      <a href="https://github.com/zic017/COGS-189-Dinosaur-Game-with-Eyeblink" class="btn btn-primary">GitHub Repo</a>
-                      <a href="https://www.youtube.com/watch?v=qMAVhjj_hBw" class="btn btn-primary">Demo Video</a>
-                    </div>
-                  </div> 
-                </div>
-                
-                <!--project-->
-                <div class="col-lg-3 mb-3">
-                  <div class="card">
-                    <img src="images/zooseeker.jpg" height="350" class="card-img-top" alt="zooseeker">
-                    <div class="card-body">
-                      <h5 class="card-title">Zoo Seeker</h5>
-                      <p class="card-text">Android application to guide tourists at the San Diego Zoo</p>
-                      <a href="https://github.com/zic017/ZooSeeker-CSE-110-Team-47" class="btn btn-primary">GitHub Repo</a>
-                    </div>
-                  </div> 
-                </div>
+
       
             </div>
          
@@ -208,10 +182,19 @@
                <div style="margin-bottom:90px;">
                   <img height="40"  alt="python" src="images/icons/python.png" style="margin-right:10px;"/>
                   <img height="40"  alt="sql" src="images/icons/sql.png" style="margin-right:10px;"/>
-                  <img height="40"  alt="sql" src="images/icons/R.png" style="margin-right:10px;"/>
+                  <img height="40" alt="excel" src="images/icons/excel.png" style="margin-right:10px;"/>
                   <img height="40" alt="java" src="images/icons/java.png" style="margin-right:10px;"/>
-                  <img height="40" alt="java" src="images/icons/Matlab.png" style="margin-right:10px;"/>
-                  <img height="40"  alt="html" src="images/icons/html.png" style="margin-right:10px;"/>
+                  <img height="40"  alt="sql" src="images/icons/R.png" style="margin-right:10px;"/>
+                  <img height="40"  alt="html" src="images/icons/html.png" style="margin-right:10px;"/> 
+                  <img height="40" alt="tableau" src="images/icons/tableau.png" style="margin-right:10px;"/>
+                </br></br>
+                  <img height="40" alt="pandas" src="images/icons/pandas.png" style="margin-right:10px;"/>
+                  <img height="40" alt="numpy" src="images/icons/numpy.png" style="margin-right:10px;"/>
+                  <img height="40" alt="matplot" src="images/icons/matplot.png" style="margin-right:10px;"/>     
+                  <img height="40" alt="sklean" src="images/icons/sklean.png" style="margin-right:10px;"/>    
+                  <img height="40" alt="seaborn" src="images/icons/seaborn.jpeg" style="margin-right:10px;"/>         
+                  <img height="40" alt="mongodb" src="images/icons/mongodb.png" style="margin-right:10px;"/>      
+
                </div>
          </div>
      </div>
@@ -223,9 +206,9 @@
      <footer>
       <div style="text-align:right;margin-right:100px;margin-bottom:50px">
          <div style="margin-left:45%;margin-top: 50px;">
-            <a href="mailto:zikangc@usc.edu" target="_blank"><img src="images/icons/gmail.png"alt="gmail"height="40"></a>
-            <a href="https://linkedin.com/in/zikang-chen" target="_blank"><img src="images/icons/linkedin.png"alt="LinkedIn"height="40"></a>
-            <a href="https://github.com/zic017" target="_blank"><img src="images/icons/github.png" alt="Github"height="40"></a>
+            <a href="mailto:xingyinxu@gmail.com" target="_blank"><img src="images/icons/gmail.png"alt="gmail"height="40"></a>
+            <a href="https://linkedin.com/in/xingyin-xu" target="_blank"><img src="images/icons/linkedin.png"alt="LinkedIn"height="40"></a>
+            <a href="https://github.com/yinyin0916" target="_blank"><img src="images/icons/github.png" alt="Github"height="40"></a>
          </div>
          <div>
             Copyright © <div id="year"></div> All Rights Reserved
