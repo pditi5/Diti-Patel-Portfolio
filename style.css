@@ -10,7 +10,6 @@ nav {
 }
 nav a {
    font-size: 1.5em;
-   /* color: #f5568696; */
    color:rgba(27, 30, 30, 0.452);
    text-decoration: none;
    padding: 6px 20px;
@@ -25,24 +24,24 @@ nav a:hover {
 
 .card-link {
    text-decoration: none;
-   color: inherit; /* Optionally, set the color to inherit the parent color */
+   color: inherit;
 }
 
 .card-link:hover {
    color:#f5568677;
-   text-decoration: none; /* Remove underline on hover */
+   text-decoration: none;
 }
 
 .btn-outline-primary:hover {
-   background-color: #f5568677; /* Change this color to your desired hover color */
-   color: #fff; /* Change this color to the desired text color on hover */
-   border-color: #f5568677; /* Change this color to the desired border color on hover */
+   background-color: #f5568677;
+   color: #fff;
+   border-color: #f5568677; 
 }
 
 .filterDiv {
    float: left;
    text-align: center;
-   display: none; /* Hidden by default */
+   display: none; 
  }
 
  .show {
@@ -63,4 +62,14 @@ nav a:hover {
  .btn.active {
    background-color: #f5568677;
    color: white;
+ }
+
+ .round-button {
+   border-radius: 70%;
+   text-decoration: none;
+   color: inherit;
+ }
+
+ .round-button:hover {
+   background-color: #5c62d551;
  }
