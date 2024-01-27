@@ -68,10 +68,22 @@
 
          <div class="container">
             <div class="h2" style="font-family:'Georgia'"><strong>Projects</strong></div><br>
+
+            <div id="myBtnContainer">
+              <button class="btn active" style="font-family:'Georgia'; color: #F55687" onclick="filterSelection('all')"> Show all</button>
+              <button class="btn" style="font-family:'Georgia'; color: #F55687" onclick="filterSelection('DA')"> Data Analysis</button>
+              <button class="btn" style="font-family:'Georgia'; color: #F55687" onclick="filterSelection('ML')"> Machine Learning</button>
+              <button class="btn" style="font-family:'Georgia'; color: #F55687" onclick="filterSelection('NLP')"> Natural Language Processing</button>
+              <button class="btn" style="font-family:'Georgia'; color: #F55687 " onclick="filterSelection('Recommendation')"> Recommendation System</button>
+              <button class="btn" style="font-family:'Georgia'; color: #F55687" onclick="filterSelection('Stats_model')" > Statistical Modeling</button>
+            </div><br>
+
+
+
             <div class="row">
       
                 <!--project-->
-                <div class="col-lg-4 mb-3">
+                <div class="col-lg-4 mb-3 filterDiv ML DA">
                   <a href="https://github.com/yinyin0916/Spotify_Popularity_Analysis" target = "_blank" rel="noopener noreferrer" class="card-link">
                   <div class="card">
                     <img src="images/projects/movie_rating.png" class="card-img-top" alt="movie rating">
@@ -81,13 +93,13 @@
                       <a href="https://github.com/yinyin0916/Spotify_Popularity_Analysis" class="btn btn-outline-primary btn-sm" style="font-size: 12px; padding: 0.2rem 0.5rem;">Report</a>
                       <a href="https://github.com/yinyin0916/Spotify_Popularity_Analysis/blob/main/Spotify_Popularity_Analysis_Report.pdf" class="btn btn-outline-primary btn-sm" style="font-size: 12px; padding: 0.2rem 0.5rem;">Github Repo</a>
                     </div>
-                  </div> 
+                  </div>
                 </a>
                 </div>
               
                 
                 <!--project-->
-                <div class="col-lg-4 mb-3">
+                <div class="col-lg-4 mb-3 filterDiv NLP">
                   <a href="https://github.com/yinyin0916/NLP2023Fall" target = "_blank" rel="noopener noreferrer" class="card-link">
                   <div class="card">
                     <img src="images/projects/LLM_kt.png" class="card-img-top" alt="heart disease">
@@ -102,7 +114,7 @@
                 </div> 
 
                 <!--project-->
-                <div class="col-lg-4 mb-3">
+                <div class="col-lg-4 mb-3 filterDiv DA">
                   <a href="https://github.com/yinyin0916/Data_Related_Job_Salary_Analysis" target = "_blank" rel="noopener noreferrer" class="card-link">
                   <div class="card">
                     <img src="images/projects/salary.png" class="card-img-top" alt="heart disease">
@@ -117,7 +129,7 @@
                 </div> 
 
                 <!--project-->
-                <div class="col-lg-4 mb-3">
+                <div class="col-lg-4 mb-3 filterDiv ML DA">
                   <a href="https://github.com/yinyin0916/Movie_Rating_Analysis" target = "_blank" rel="noopener noreferrer" class="card-link">
                   <div class="card">
                     <img src="images/projects/movie.png" class="card-img-top" alt="heart disease">
@@ -133,7 +145,7 @@
                 </div>                
                 
                 <!--project-->
-                <div class="col-lg-4 mb-3">
+                <div class="col-lg-4 mb-3 filterDiv Recommendation ML">
                   <a href="https://github.com/yinyin0916/Rating_Prediction" target = "_blank" rel="noopener noreferrer" class="card-link">
                   <div class="card">
                     <img src="images/projects/reviews.png" class="card-img-top" alt="Rating Prediction">
@@ -149,7 +161,7 @@
 
       
                 <!--project-->
-                <div class="col-lg-4 mb-3">
+                <div class="col-lg-4 mb-3 filterDiv ML">
                   <a href="https://github.com/yinyin0916/Heart_Attack_Prediction" target = "_blank" rel="noopener noreferrer" class="card-link">
                   <div class="card">
                     <img src="images/projects/heart.png" class="card-img-top" alt="heart disease">
@@ -164,7 +176,7 @@
                 </div>
       
                 <!--project-->
-                <div class="col-lg-4 mb-3">
+                <div class="col-lg-4 mb-3 filterDiv Stats_model">
                   <a href="https://github.com/yinyin0916/SIRModel_in_Cloth_Shop" target = "_blank" rel="noopener noreferrer" class="card-link">
                   <div class="card">
                     <img src="images/projects/sale_simulation.png" class="card-img-top" alt="Rating Prediction">
@@ -205,10 +217,59 @@
                </div>
          </div>
      </div>
+    <script>
+      filterSelection("all")
+function filterSelection(c) {
+  var x, i;
+  x = document.getElementsByClassName("filterDiv");
+  if (c == "all") c = "";
+  // Add the "show" class (display:block) to the filtered elements, and remove the "show" class from the elements that are not selected
+  for (i = 0; i < x.length; i++) {
+    w3RemoveClass(x[i], "show");
+    if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+  }
+}
 
-   
+// Show filtered elements
+function w3AddClass(element, name) {
+  var i, arr1, arr2;
+  arr1 = element.className.split(" ");
+  arr2 = name.split(" ");
+  for (i = 0; i < arr2.length; i++) {
+    if (arr1.indexOf(arr2[i]) == -1) {
+      element.className += " " + arr2[i];
+    }
+  }
+}
+
+// Hide elements that are not selected
+function w3RemoveClass(element, name) {
+  var i, arr1, arr2;
+  arr1 = element.className.split(" ");
+  arr2 = name.split(" ");
+  for (i = 0; i < arr2.length; i++) {
+    while (arr1.indexOf(arr2[i]) > -1) {
+      arr1.splice(arr1.indexOf(arr2[i]), 1);
+    }
+  }
+  element.className = arr1.join(" ");
+}
+
+// Add active class to the current control button (highlight it)
+var btnContainer = document.getElementById("myBtnContainer");
+var btns = btnContainer.getElementsByClassName("btn");
+for (var i = 0; i < btns.length; i++) {
+  btns[i].addEventListener("click", function() {
+    var current = document.getElementsByClassName("active");
+    current[0].className = current[0].className.replace(" active", "");
+    this.className += " active";
+  });
+}
+    </script>
+    
 
      </div>
+     
    
      <footer>
       <div style="text-align: right">
