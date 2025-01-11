@@ -1,4 +1,4 @@
-# Xingyin's Personal Website
+# Diti's Personal Website
 
 This is my personal website.
 
